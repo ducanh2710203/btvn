@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    function tamHop(namSinhNam, namSinhNu) {
+  // Tính tam hợp
+  // 10 là 10 canh
+  let hop = (namSinhNam.getFullYear() + namSinhNu.getFullYear()) % 10;
+  if (hop == 1) {
+    hop = 10;
+  }
+  return hop;
+}
+
+function tamTai(namSinh) {
+  // Tính tam tai
+
+  let tai = (namSinh.getFullYear() - 4) % 12;
+  return tai;
+}
+
+// Nhập ngày tháng năm sinh của 2 bạn Nam và Nữ
+const namSinhNam = new Date(prompt("Nhập ngày tháng năm sinh của Nam (dạng dd/mm/yyyy): "));
+const namSinhNu = new Date(prompt("Nhập ngày tháng năm sinh của Nữ (dạng dd/mm/yyyy): "));
+
+// Tính tam hợp của 2 bạn
+const tamHopNamNu = tamHop(namSinhNam, namSinhNu);
+
+// Tính tam tai của 2 bạn
+const tamTaiNam = tamTai(namSinhNam);
+const tamTaiNu = tamTai(namSinhNu);
+
+// Kiểm tra xem tam hợp của 2 bạn có giống nhau không
+if (tamHopNamNu === tamTaiNam || tamHopNamNu === tamTaiNu) {
+  alert("Hợp nhau");
+} else {
+  alert("Chưa hợp nhau");
+}
+
+</script>
+kỷ mùi 
+mậu ngọ

@@ -20,20 +20,34 @@
     let c = +prompt("nhập  c");
     let delta = b * b - 4 * a * c;
     let x1, x2;
-    if (delta<0) {
-        alert("pt vô nghiện")
+    if (a = 0) {
+        if (b = 0) {
+            if (c = 0) {
+                alert("phương trình vô số nghiệm")
+            } else {
+                alert("phương trình vô nghiện");
+            }
+        } else {
+            x1= -c/b;
+            alert("phương trình có nghiện là "+x1);
+        }
     } else {
-        if (delta == 0) {
-        x1 = x2 = -b / (2 * a);
-        alert( "phuong trinh có nghiện :"+x1);
-        alert( "phuong trinh có nghiện :"+x2);
-    } else {
-        let z = Math.sqrt(delta);
-        x1 = (-b + z) / (2 * a);
-        x2 = (-b - z) / (2 * a);
-        alert( "phuong trinh có nghiện :"+x1);
-        alert( "phuong trinh có nghiện :"+x2);
+        if (delta < 0) {
+            alert("pt vô nghiện")
+        } else {
+            if (delta == 0) {
+                x1 = x2 = -b / (2 * a);
+
+                alert("phương trình có nghiện kép :" + x1 + x2);
+
+            } else {
+                let z = Math.sqrt(delta);
+                x1 = (-b + z) / (2 * a);
+                x2 = (-b - z) / (2 * a);
+                alert("phuong trinh có nghiện :" + x1);
+                alert("phuong trinh có nghiện :" + x2);
+            }
+        }
     }
-    }
-    
+
 </script>
