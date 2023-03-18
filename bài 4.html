@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let A = [13,16,15,13,15];
+    let z = A[0]
+    let dem = 0
+    let a = 0;
+    for (let i = 0; i < A.length; i++) {
+        dem = 0
+        for (let j = 0; j < A.length; j++) {
+            if (A[i] == A[j]) {
+                console.log("A[i] = " + A[i])
+                console.log("A[j] = " +A[j])
+                dem++
+            }
+        }
+        console.log("dem= " + dem)
+        if (dem > 1) {
+            false
+        } else {
+            z = A[i]
+        }
+        console.log("z=" + z)
+
+    }
+    console.log(A)
+    document.write("giá trị ko trùng là " + z)
+
+</script>
