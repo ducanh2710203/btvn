@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    td{
+        height: 100px;
+        width: 200px;
+    }
+    table{
+        border-collapse: collapse;
+        text-align: center;
+    }
+</style>
+<body>
+
+</body>
+</html>
+<script !src="">
+    let sum = 0
+    let a = +prompt("nhập tổng cần check")
+    let arr = [1,32,1,3,54,3,6,7,8,9,10]
+    document.write("<table border='1' >")
+    for (let i = 0; i < arr.length; i++) {
+
+        for (let j = i + 1; j <arr.length; j++) {
+            for (let k = j+1; k < arr.length; k++) {
+                sum = arr[i] + arr[j] + arr[k]
+
+                if ( a === sum ){
+                    document.write("<tr>")
+                    document.write("<td>các bộ ba thỏa mãn tổng bằng "+a)
+                    document.write("<td>arr["+i+"]="+arr[i])
+                    document.write("<td>arr["+j+"]="+arr[j])
+                    document.write("<td>arr["+k+"]="+arr[k])
+                }
+            }
+
+        }
+
+
+    }
+
+</script>

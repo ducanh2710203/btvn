@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script !src="">
+  let A = [1,32,4,2,1,2,4,3]
+  let B = [4,32,60,2,1,7,4,3]
+  let C = [10,32,4,7,1,2,4,3]
+  let tong = 0
+  let tong1 = 0
+  let tong2 = 0
+  for (let i = 0; i < A.length; i++) {
+        tong += A[i]
+  }
+  for (let i = 0; i < B.length; i++) {
+        tong1 += B[i]
+  }
+  for (let i = 0; i < C.length; i++) {
+        tong2 += C[i]
+  }
+  console.log(tong)
+  console.log(tong1)
+  console.log(tong2)
+  if (tong>tong1&&tong>tong2){
+      alert("mảng A có tổng "+tong+"là mảng có tổng lớn nhất")
+  }else if (tong1>tong&&tong1>tong2){
+      alert("mảng B có tổng "+tong1+"là mảng có tổng lớn nhất")
+  }else{
+      alert("mảng C có tổng "+tong2+"là mảng có tổng lớn nhất")
+  }
+
+</script>
